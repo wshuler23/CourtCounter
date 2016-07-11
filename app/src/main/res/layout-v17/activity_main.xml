@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context="edu.desu.dsuappacademy.courtcounter.MainActivity"
+    android:weightSum="1"
+    android:textAlignment="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="333dp"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_weight="0.49">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="34dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Team A"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="9"
+            android:id="@+id/team_a_score"
+            android:layout_weight="0.06"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="+3 POINTS"
+            android:id="@+id/button"
+            android:textAlignment="center"
+            android:onClick="teamAThreeScore"
+            android:background="@android:color/holo_orange_dark"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="+2 POINTS"
+            android:id="@+id/button2"
+            android:onClick="teamATwoScore"
+            android:background="@android:color/holo_orange_dark"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="FREE THROW"
+            android:id="@+id/button3"
+            android:onClick="teamAOneScore"
+            android:background="@android:color/holo_orange_dark"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:id="@+id/button7"
+        android:layout_gravity="bottom"
+        android:onClick="resetButton"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="117dp"
+        android:layout_height="332dp"
+        android:weightSum="1"
+        android:textAlignment="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Team B"
+            android:textAlignment="center"
+            android:layout_weight="0.08" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="16"
+            android:id="@+id/team_b_score"
+            android:layout_weight="0.08"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="+3 POINTS"
+            android:id="@+id/button4"
+            android:textAlignment="center"
+            android:onClick="teamBThreeScore"
+            android:background="@android:color/holo_orange_dark"/>
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="+2 POINTS"
+            android:id="@+id/button5"
+            android:onClick="teamBTwoScore"
+            android:background="@android:color/holo_orange_dark"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="FREE THROW"
+            android:id="@+id/button6"
+            android:singleLine="false"
+            android:onClick="teamBOneScore"
+            android:background="@android:color/holo_orange_dark"/>
+    </LinearLayout>
+
+</LinearLayout>
